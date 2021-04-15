@@ -1,0 +1,28 @@
+@import '../../../partials/variables';
+@import '../../../partials/mixins';
+
+.todo-form {
+  @include flex-column;
+
+  &__input{
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 1px 10px $depth-brown;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    font-family: $secondary-font;
+    font-size: 1.125rem;
+    border: none;
+    background: $depth-brown;
+    color: $light-brown;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+  }
+}

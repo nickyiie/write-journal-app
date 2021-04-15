@@ -1,0 +1,38 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.new-entry {
+  margin: calc(100vw - 95vw);
+  margin-bottom: 110px;
+  margin-top: 120px;
+
+  &__form {
+    @include flex-column;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  &__title{
+    width: 70%
+  }
+
+  &__entry {
+    resize: none;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    height: 50vh;
+
+    &::placeholder{
+      padding: 1rem;
+    }
+  }
+
+  &__button{ 
+    @include button1;
+  }
+}
+

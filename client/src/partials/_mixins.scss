@@ -1,0 +1,31 @@
+@import './variables';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button1 {
+  padding: .25rem 1rem;
+  border: 1px solid $primary-color-1;
+  box-shadow: 3.5px 3.5px 8px $shadow;
+  color: $primary-color-1;
+  background: $primary-color-4;
+  text-decoration: none;
+}
+
+@mixin arrow-animation {
+  transition: transform .2s ease-out;
+
+  &:hover {
+      transform: translate(-0.25rem, 0);
+  }
+}

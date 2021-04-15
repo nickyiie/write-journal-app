@@ -1,0 +1,69 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.login {
+  width:100vw;
+  height:100vh;
+  padding-top: 5rem;
+    
+  &__form {
+    @include flex-column;
+    width: calc(100vw - 20vw);
+    border: 2px solid $primary-color-1;
+    background: $primary-backgroun;
+    box-shadow: 6px 10px 20px $shadow;
+    margin: auto;
+
+  }
+  &__title {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: $primary-font;
+  }
+
+  &__form-title {
+    margin: 1rem;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid $primary-color-3;
+
+    &:focus {
+      outline:none;
+      color: $primary-color-3;
+      background-color: white;
+      font-family: $secondary-font;
+    }
+
+    &:active {
+      font-family: $secondary-font;
+    }
+
+    &::placeholder {
+      font-family: $secondary-font;
+    }
+  }
+
+  &__button {
+    @include button1;
+    margin-bottom: .5rem;
+    padding: .25rem 2.6rem;
+  }
+
+   &__register {
+    color: $primary-color-3;
+     text-align: center;
+     margin: 1rem 0;
+     text-decoration: none;
+     font-family: $secondary-font;
+   }
+
+  &__google {
+    max-height: 2rem;
+    background: #ffffff;
+    border: 1px solid $primary-color-1;
+    box-shadow: 3.5px 3.5px 8px $shadow;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.sign-up {
+  width:100vw;
+  height:100vh;
+  padding-top: 5rem;
+    
+  &__form {
+    @include flex-column;
+    width: calc(100vw - 20vw);
+    border: 2px solid $primary-color-1;
+    background: $primary-backgroun;
+    box-shadow: 6px 10px 20px $shadow;
+    margin: auto;
+
+  }
+  &__title {
+    text-align: center;
+    margin: 1rem 0;
+    color: $primary-color-1;
+    font-family: $primary-font;
+  }
+
+  &__subtitle {
+    margin: 1rem;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid $primary-color-3;
+
+    &:focus {
+      outline:none;
+      color: $primary-color-3;
+    }
+  }
+
+  &__button {
+    @include button1;
+    margin-bottom: 1.5rem;
+  }
+
+}

@@ -1,0 +1,79 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.single-entry {
+  margin-bottom: 100px;
+  &__header {
+    display: flex;
+    height: 3rem;
+    margin-top: 105px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  &__header-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    word-wrap: break-word;
+  }
+
+  &__chevron {
+    width: 25px;
+    height: 30px;
+    @include arrow-animation;
+  }
+
+  &__stats {
+    @include flex-column;
+    justify-content: space-around;
+    width: 28%;
+  }
+
+  &__date {
+    color: grey;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align:center;
+  }
+
+  &__mood {
+    width: 100%;
+    text-align: center;
+    color: grey;
+    font-family: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px $shadow;
+  }
+
+  &__happy {
+    background:	#e8f4ea;
+  }
+
+  &__excited {
+    background:	#ffffe0;
+  }
+
+  &__sad {
+    background:	#bbebfd;
+  }
+
+  &__angry {
+    background:	#edacab;
+  }
+
+  &__scared {
+    background:	#f2edfb;
+  }
+
+  &__entry {
+    font-family: $secondary-font;
+    font-size: 1.55rem;
+    padding: 0 1rem 0 2.5rem;
+  }
+}
