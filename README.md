@@ -1,6 +1,6 @@
 # write-journal-app
 
-![alt text](https://github.com/nickyiie/write-journal-app/blob/master/illwrite.png?raw=true)
+![alt text](https://github.com/nickyiie/write-journal-app/blob/master/client/src/assets/illwrite.png?raw=true)
 
 A gamefied journaling app meant to keep you motivated inorder to create a self-reflection habit.
 
